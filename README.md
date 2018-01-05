@@ -2,6 +2,8 @@
 
 Single layer Dockerfile for n1nj4sec's Pupy RAT running under CentOS
 
+REF: https://github.com/n1nj4sec/pupy
+
 ## Usage:  
 ```
 docker run -i -t -p $HOSTIP:$HOSTPORT:$CONTAINERPORT {docker image ID}
