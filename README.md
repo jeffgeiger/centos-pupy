@@ -20,4 +20,7 @@ docker attach {container ID or name}
 # To expose multiple ports on your container, add multiple instances of the "-p" argument:
 ... -p $HOSTIP:$HOSTPORT:$CONTAINERPORT -p $HOSTIP:$HOSTPORT:$CONTAINERPORT ...
 
+# Run the various pupy commands prefaced with xvfb-run, like so:
+xvfb-run python pupy/pupysh.py
+
 ```
