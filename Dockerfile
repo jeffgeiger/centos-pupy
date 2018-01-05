@@ -16,7 +16,8 @@ RUN yum clean all && rm -rf /var/cache/yum && yum makecache && \
  yum install xorg-x11-server-Xvfb-1.19.3-11.el7.x86_64.rpm -y && \
  xvfb-run pip install -r pupy/requirements.txt && \
  curl -LO https://github.com/n1nj4sec/pupy/releases/download/latest/payload_templates.txz && \
- tar xvf payload_templates.txz && mv -f payload_templates/* pupy/payload_templates/ && rm -f payload_templates.txz && rm -rf payload_templates
+ tar xvf payload_templates.txz && mv -f payload_templates/* pupy/payload_templates/ && rm -f payload_templates.txz && rm -rf payload_templates && \
+ mkdir /tmp/loot
 
 WORKDIR /opt/pupy
 
